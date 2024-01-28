@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+
 if os.path.exists('env.py'):
     import env
 
@@ -33,7 +34,7 @@ SECRET_KEY = 'django-insecure-r)c-j0u5c3wdex44*)!7h$$5ulop7my(rlp*or=y990w&pz8ra
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-daniel009891-drfapi-9emfnaep1tn.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -44,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'coudinary_storage',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
+    'profiles',
 ]
 
 MIDDLEWARE = [
